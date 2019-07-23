@@ -253,8 +253,8 @@
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ep3-K7-FDl">
-                                <rect key="frame" x="50" y="703" width="314" height="76"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nigiri is meant to be eaten upside down for the best sushi dining experience." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ep3-K7-FDl">
+                                <rect key="frame" x="50" y="703" width="319" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -283,6 +283,7 @@
                     <connections>
                         <outlet property="btnStart" destination="EER-84-h9o" id="6tk-Ed-11G"/>
                         <outlet property="collectionView" destination="8f0-OI-i5f" id="tGI-Z2-aTQ"/>
+                        <outlet property="funFacts" destination="Ep3-K7-FDl" id="FNU-e5-OOd"/>
                         <outlet property="jpnTxt" destination="zD5-S0-1K9" id="O8W-Xd-Z0J"/>
                         <outlet property="lblItemName" destination="xMy-7s-dWw" id="FoS-a9-aAA"/>
                         <outlet property="pageControl" destination="Nqt-GY-pj0" id="jpD-3C-Vlv"/>
@@ -307,8 +308,7 @@
                                 <rect key="frame" x="20" y="44" width="46" height="44"/>
                                 <state key="normal" title="Button" image="Back Button"/>
                                 <connections>
-                                    <action selector="backButton:" destination="ECi-Xl-ma2" eventType="touchUpInside" id="Xpa-Ng-qWE"/>
-                                    <segue destination="2SQ-Vb-9gB" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="m44-S7-WUn"/>
+                                    <segue destination="2SQ-Vb-9gB" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="x0L-X9-WXP"/>
                                 </connections>
                             </button>
                         </subviews>

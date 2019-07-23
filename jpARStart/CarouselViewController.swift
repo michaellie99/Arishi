@@ -13,7 +13,8 @@ struct ModelCollectionFlowLayout {
     var image:UIImage!
 }
 class CarouselViewController: UIViewController {
-
+    @IBOutlet weak var funFacts: UILabel!
+       let funFactes = ["Nigiri is meant to be eaten upside down for the best sushi dining experience.","Avocado, cucumber, and carrots are the most popular veggies used in sushi.","Gunkan sushi is also called battleship sushi or Gundam sushi."]
     
     var arrData = [ModelCollectionFlowLayout]()
     
@@ -105,6 +106,8 @@ class CarouselViewController: UIViewController {
             btnStart.isEnabled = true
         }
         pageControl.currentPage = currentPage
+        
+        funFacts.text = funFactes[currentPage]
     }
 
 
